@@ -1,1 +1,35 @@
-jeo
+Mecanum Control Equations
+
+Movement:
+
+FORWARD AND BACKWARDS:
+
+double y = -gamepad1.left_stick_y;
+
+leftMotor.setPower(y);
+rightMotor.setPower(y);
+
+Explanation: If Left stick is pushed forwards, both motors are given a POSITIVE value, causing the bot to move forward.
+             If the Left Stick is pushed backwards, both motors are given a NEGATIVE value, causing the bot to move backwards.
+
+Remember, Y stick is reversed
+
+ROTATION:
+
+double y = -gamepad1.left_stick_y;
+double rx = gamepad1.right_stick_x;
+
+leftMotor.setPower(y + rx);
+rightMotor.setPower(y - rx);
+
+Explanation: Subtracting the power from one motor and adding it to the other will cause the robot to turn
+             Similar to the forwards and backward movement the rotation involves giving the motors positive and negative feeds
+             If the right stick is pushed to the right, the left wheels are given a positive value, causing them to move in a forward direction.
+             The right wheels are given a negative value, causing them to move in the other direction, causing the robot to turn right.
+
+STRAFING:
+Too complex to do now will complete later...
+
+
+
+
