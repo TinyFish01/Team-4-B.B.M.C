@@ -28,7 +28,6 @@ Explanation: Subtracting the power from one motor and adding it to the other wil
              The right wheels are given a negative value, causing them to move in the other direction, causing the robot to turn right.
 
 STRAFING:
-Too complex to do now will complete later...
 
 
 
